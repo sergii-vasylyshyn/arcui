@@ -1,0 +1,100 @@
+.h {
+    display: none;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.button {
+    display: inline-block;
+    border: 1px solid rgb(141, 141, 141);
+    padding: 5px 20px;
+    font-size: 14px;
+    transition: 0.3s all;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgb(219, 219, 219);
+}
+
+.fade-detector + .fade-observer {
+    display: none;
+}
+
+.fade-detector:checked + .fade-observer {
+    display: block;
+    animation: fadeIn 0.3s;
+}
+
+.modal-shadow {
+    position: fixed;
+    background: rgba(0,0,0,0.2);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.modal-window {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.modal-head,
+.modal-footer {
+    padding: 10px;
+}
+.modal-body {
+    padding: 30px;
+}
+
+.modal-head {
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.modal-head-place {
+    width: 100%;
+    padding-left: 30px;
+}
+
+.modal-close {
+    width: 30px;
+    text-align: center;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    opacity: 0.7;
+}
+
+.ta-center {
+    text-align: center;
+}
